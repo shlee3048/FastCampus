@@ -14,7 +14,7 @@ dependencies {
 repositories {
 //  mavenCentral()
     maven {
-        url "http://<Nexus Private IP>:8081/repository/<nexus artifact repository Name>"
+        url "http://ec2-3-36-68-239.ap-northeast-2.compute.amazonaws.com:8081/repository/shl-docker-nexus-repository/"
         allowInsecureProtocol true
     }
 
@@ -43,7 +43,7 @@ jib {
         image = 'adoptopenjdk/openjdk11:alpine-jre'
     }
     to {
-        image = '<AWS ECR URL>/<Image Repository Name>'
+        image = '266852548854.dkr.ecr.ap-northeast-2.amazonaws.com/test'
         tags = ['<Image Tag Name>']
     }
     container {
