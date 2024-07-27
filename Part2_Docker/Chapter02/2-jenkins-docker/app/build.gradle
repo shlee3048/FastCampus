@@ -19,7 +19,7 @@ version = '0.0.1-SNAPSHOT'
 description = 'test-docker-spring-boot'
 group = 'com.test'
 
-java.sourceCompatibility = JavaVersion.VERSION_21
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 jar {
     enabled = false
@@ -31,7 +31,7 @@ tasks.withType(JavaCompile) {
 
 jib {
     from {
-        image = 'adoptopenjdk/openjdk21:alpine-jre'
+        image = 'adoptopenjdk/openjdk11:alpine-jre'
     }
     container {
 
