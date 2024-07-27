@@ -44,7 +44,7 @@ jib {
     }
     to {
         image = '266852548854.dkr.ecr.ap-northeast-2.amazonaws.com/test'
-        tags = ['<Image Tag Name>']
+        tags = ['4']
     }
     container {
         entrypoint = ['java', '-Dspring.profiles.active=test', '-jar', 'test-docker-spring-boot-0.0.1-SNAPSHOT.jar']
